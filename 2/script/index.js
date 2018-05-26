@@ -21,7 +21,7 @@ banner.prototype = {
         //console.log($(".box").find("img"))
         $(".box").find("img").css("opacity","0");//设置图片初始透明度
         
-        $(".box").animate({ "margin-left": + -this.imgWidth * this.index + "px" }, 600);//改变外框的margin-left值，实现图片轮播
+        $(".box").animate({ "margin-left":  -this.imgWidth * this.index + "px" }, 600);//改变外框的margin-left值，实现图片轮播
         $(".box").find("img").animate({"opacity":1},600)//图片透明度的改变
     },
     click(){
@@ -57,18 +57,18 @@ banner.prototype = {
     stop(){
          //鼠标放上去暂停轮播  
          $(".prev").hover(function(){
-             clearInterval(p);  
+             clearInterval(p);  //划入清除定时器，停止轮播
          })
         $(".next").hover(function () {
-            clearInterval(p);
+            clearInterval(p);//划入清除定时器，停止轮播
         })
         $('.banner').hover(function(){  
-            clearInterval(p);  
+            clearInterval(p);  //划入清除定时器，停止轮播
         },function () {  
             this.selectimg(); 
         }.bind(this)); 
         $(".banner").mouseleave(function(){
-            this.autoplay();
+            this.autoplay();//划出开启定时器，自动轮播
         }.bind(this))
     }
 }
