@@ -1,0 +1,22 @@
+body{overflow-x:hidden;}
+body,h1,h3,h4,h2,h5,h6,ul,ol,p,fieldset,dd,dl,input,textarea,option,hr,td{margin:0;padding:0;}
+a{text-decoration:none; color:#333;}
+body{background: #f7f7f7;}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+li{list-style:none;}
+img{border:none; display:block;}
+a,input{outline:none;border: none;text-decoration: none;}
+body{font:14px/1em "微软雅黑"; color:#666;}
+.clear:after{content:"."; display:block; clear:both;height:0; visibility:hidden;}
+.clear{zoom:1;}
+
+.border0{border:none;}
+.wrap{width: 1200px;height: 100px;margin: 20px 50px;padding-left: 60px;}
+.wrap ul{margin: 0 auto;}
+.wrap ul li{width: 200px;height: 350px;float: left;margin-right: 20px;list-style: none;margin-top: 40px;}
+.wrap ul li img{width: 200px;height: 280px;}
+.wrap ul li h3{color: red;position: relative;border: none;}
+.wrap ul li h3 span{color:gray;margin-left: 100px;font-size: 14px;position: absolute;}
+.wrap ul li p{margin-top: 10px;}
+.wrap ul li div{width: 200px;height: 30px; background: #ff464e;color: #fff;font-weight: bold;text-align: center;padding-top: 15px;margin-top: 10px;}
